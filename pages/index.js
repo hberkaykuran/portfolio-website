@@ -69,15 +69,13 @@ const Hero = () => {
             Berkay Kuran
           </Heading>
           <Text mb={{ base: '4rem', lg: '6rem' }} as="h2" variant="subtitle">
-            Welcome to my corner of the internet, where you can find my works,
-            thoughts, favourite beer and other random things.
+            Welcome to the dark side. We have cookies 🍪
           </Text>
           <Heading as="h3" variant="h3" mb="0.5rem">
             Ok, but who are you?
           </Heading>
           <Text fontSize="xl" mb="2rem">
-            I&apos;m a curiosity-driven, design-focused developer, building rich,
-            user-centric, inclusive experiences on the web.
+            I&apos;m just a regular everyday normal mf.
           </Text>
           <Text fontSize="xl" mb={{ base: '1rem', lg: '2rem' }}>
             Feel free to have a look around, and learn more about myself and

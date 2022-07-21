@@ -6,7 +6,8 @@ import {
   List,
   ListItem,
   Text,
-  VStack
+  VStack,
+  Flex
 } from '@chakra-ui/layout';
 import { useColorModeSwitcher } from '../../utils/hooks/useColorModeSwitcher';
 import Icon from '@chakra-ui/icon';
@@ -51,40 +52,42 @@ export const ProjectCard = ({
           </Heading>
         )}
       </Center>
-      <VStack px="2rem" align="start" spacing="2rem">
-        <Heading data-testid="project-title" as="h3" variant="h3">
-          {title}
-        </Heading>
-        <Text data-testid="project-description">{description}</Text>
-        <List display="flex" flexDirection="row">
-          {tools.map((tool) => (
-            <ListItem key={tool.id} p="0.5rem">
-              <Icon
-                aria-label={tool.name}
-                transitionDuration="300ms"
-                boxSize="1.5rem"
-                as={tool.icon}
-                _hover={{ fill: tool.color }}
-              />
-            </ListItem>
-          ))}
-        </List>
-        <HStack pb="2rem">
-          {live && (
-            <Button as="a" href={live} target='_blank' variant="primary">
-              Visit Site
-            </Button>
-          )}
-          {proto && (
-            <Button as="a" href={proto} variant="primary">
-              Prototype
-            </Button>
-          )}
-          {repo && <Button as="a" href={repo} variant="secondary">
-            View Code
-          </Button>}
-        </HStack>
-      </VStack>
+      <Flex height='-moz-max-content' alignItems='center' justifyContent='space-between' px="2rem" spacing="2rem" flexDir='column'>        
+          <Heading data-testid="project-title" as="h3" variant="h3">
+            {title}
+          </Heading>
+          <Text data-testid="project-description">{description}</Text>
+          <Box alignItems='center' justifyContent='center' flexDir='column'>
+            <List display="flex" flexDirection="row">
+              {tools.map((tool) => (
+                <ListItem key={tool.id} p="0.5rem">
+                  <Icon
+                    aria-label={tool.name}
+                    transitionDuration="300ms"
+                    boxSize="1.5rem"
+                    as={tool.icon}
+                    _hover={{ fill: tool.color }}
+                  />
+                </ListItem>
+              ))}
+            </List>
+            <HStack pb="2rem">
+              {live && (
+                <Button as="a" href={live} target='_blank' variant="primary">
+                  Visit Site
+                </Button>
+              )}
+              {proto && (
+                <Button as="a" href={proto} variant="primary">
+                  Prototype
+                </Button>
+              )}
+              {repo && <Button as="a" href={repo} variant="secondary">
+                View Code
+              </Button>}
+            </HStack>
+          </Box>
+      </Flex>
     </Box>
   );
 };
