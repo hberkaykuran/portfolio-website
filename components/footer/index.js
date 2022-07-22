@@ -1,14 +1,14 @@
 import NextLink from 'next/link';
 import useToggle from '../../utils/hooks/useToggle';
 import { Icon } from '@chakra-ui/icons';
-import { Link, HStack, VStack, Center } from '@chakra-ui/layout';
+import { Link, HStack, VStack, Center} from '@chakra-ui/layout';
 import { useMediaQuery } from '@chakra-ui/media-query';
 import VisuallyHidden from '@chakra-ui/visually-hidden';
 import { github, linkedin, discord } from '../../data/socials';
 
 export const Footer = () => {
   const [isLarge] = useMediaQuery('(min-width: 992px)');
-  return (
+  return (  
     <VStack
       borderTop="1px solid"
       borderColor="neutral.200"
@@ -51,8 +51,9 @@ const Condensed = () => {
         icon={discord.icon}
         href={discord.href}
         name={discord.name}
-      />
+      />     
     </HStack>
+    
   );
 };
 
