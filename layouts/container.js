@@ -8,8 +8,8 @@ import { Footer } from '../components/footer';
 const Container = ({ children, ...customMeta }) => {
   const [isOpen, toggleIsOpen] = useToggle();
 
-  return (
-    <Box>
+  return (    
+    <Box>   
       <Seo {...customMeta} />
       <Button
         variant="secondary"
@@ -47,11 +47,15 @@ const Seo = ({ ...customMeta }) => {
   };
 
   return (
-    <Head>
+    <Head>      
       <title>{meta.title}</title>
       <meta content={meta.description} name="description" />
       <link rel="icon" href="/favicon.ico" />
-    </Head>
+      <script type="text/javascript"
+  dangerouslySetInnerHTML= {{__html: `window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+  heap.load("4190475229");`}}
+  ></script>
+    </Head >
   );
 };
 
