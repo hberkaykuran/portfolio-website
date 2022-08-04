@@ -78,7 +78,7 @@ const Hero = () => {
             I&apos;m your friendly neighbourhood tech guy.
           </Text>
           <Text fontSize="xl" mb={{ base: '1rem', lg: '2rem' }}>
-            Feel free to hit me up, slide into my dm's, or leave a voicemail anytime! {'('}Except for Tuesdays. That's a me time.{')'}
+            Feel free to hit me up, slide into my dm&apos;s, or leave a voicemail anytime! {'('}Except for Tuesdays. That&apos;s a me time.{')'}
           </Text>
           <NextLink href="#footer" passHref>
             <Button as="a" variant="primaryThemed" size="lg">
