@@ -72,14 +72,13 @@ const Hero = () => {
             Welcome to the dark side. We have cookies 🍪
           </Text>
           <Heading as="h3" variant="h3" mb="0.5rem">
-            Ok, but who are you?
+            Who dis?
           </Heading>
           <Text fontSize="xl" mb="2rem">
-            I&apos;m just a regular everyday normal mf.
+            I&apos;m your friendly neighbourhood tech guy.
           </Text>
           <Text fontSize="xl" mb={{ base: '1rem', lg: '2rem' }}>
-            Feel free to have a look around, and learn more about myself and
-            what I like to work on.{' '}
+            Feel free to hit me up, slide into my dm's, or leave a voicemail anytime! {'('}Except for Tuesdays. That's a me time.{')'}
           </Text>
           <NextLink href="#footer" passHref>
             <Button as="a" variant="primaryThemed" size="lg">

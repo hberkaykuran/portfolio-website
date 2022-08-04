@@ -1,7 +1,8 @@
 import {
   SiGithub,
   SiLinkedin,
-  SiDiscord
+  SiDiscord,
+  SiInstagram
 } from 'react-icons/si';
 
 export const github = {
@@ -24,3 +25,10 @@ export const discord = {
   name: 'discord',
   color: '#5865F2'
 };
+
+export const instagram = {
+  icon: SiInstagram,
+  href: "https://www.instagram.com/lowbudgetmessiah",
+  name: 'instagram',
+  color: "#D72361"
+}

@@ -4,7 +4,7 @@ import { Icon } from '@chakra-ui/icons';
 import { Link, HStack, VStack, Center} from '@chakra-ui/layout';
 import { useMediaQuery } from '@chakra-ui/media-query';
 import VisuallyHidden from '@chakra-ui/visually-hidden';
-import { github, linkedin, discord } from '../../data/socials';
+import { github, linkedin, discord, instagram } from '../../data/socials';
 
 export const Footer = () => {
   const [isLarge] = useMediaQuery('(min-width: 992px)');
@@ -51,7 +51,13 @@ const Condensed = () => {
         icon={discord.icon}
         href={discord.href}
         name={discord.name}
-      />     
+      />
+      <SocialLink
+        color={instagram.color}
+        icon={instagram.icon}
+        href={instagram.href}
+        name={instagram.name}
+      />       
     </HStack>
     
   );
