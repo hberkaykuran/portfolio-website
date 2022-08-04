@@ -107,6 +107,15 @@ const Socials = () => {
       >
         Discord
       </SocialLink>
+
+      <SocialLink
+        color={instagram.color}
+        icon={instagram.icon}
+        href={instagram.href}
+        name={instagram.name}
+      >  
+        Instagram
+      </SocialLink>     
     </VStack>
   );
 };
