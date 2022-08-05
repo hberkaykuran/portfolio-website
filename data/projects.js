@@ -26,7 +26,7 @@ export default [
     title: 'Fruit Festival',
     description:
       'Slot machine application that runs on Avalanche Testnet. Fruit festival is the product of my experimentations with Smart Contracts, Moralis, and web3.js.',
-    tools: [react, nextjs, chakra, moralist, web3t],
+    tools: [react, nextjs, chakra],
     live: 'https://fruit-festival-web3.vercel.app/',
     proto: null,
     repo: null,

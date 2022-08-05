@@ -53,11 +53,14 @@ export const ProjectCard = ({
         )}
       </Center>
       <Flex height='-moz-max-content' alignItems='center' justifyContent='space-between' px="2rem" spacing="2rem" flexDir='column'>        
+          
+          <Box alignItems='center' justifyContent='center' flexDir='column' display='flex'>
           <Heading data-testid="project-title" as="h3" variant="h3">
             {title}
           </Heading>
           <Text data-testid="project-description">{description}</Text>
-          <Box alignItems='center' justifyContent='center' flexDir='column'>
+          </Box>
+          <Box alignItems='center' justifyContent='center' flexDir='column' display='flex'>
             <List display="flex" flexDirection="row">
               {tools.map((tool) => (
                 <ListItem key={tool.id} p="0.5rem">
