@@ -2,7 +2,7 @@ import { useColorModeSwitcher } from '../../utils/hooks/useColorModeSwitcher';
 import useToggle from '../../utils/hooks/useToggle';
 import { IconButton } from '@chakra-ui/button';
 import { useColorMode } from '@chakra-ui/color-mode';
-import { Box, Flex, HStack, VStack } from '@chakra-ui/layout';
+import { Box, Flex, HStack, VStack, Button } from '@chakra-ui/layout';
 import { IoMoon, IoSunnyOutline } from 'react-icons/io5';
 import { StyledLink } from '../styled/link';
 import { Logo } from '../../components/svg';
@@ -18,8 +18,9 @@ export const Navbar = ({ isOpen, toggleIsOpen }) => {
       justify="space-between"
     >
       <MenuButton toggleIsOpen={toggleIsOpen} />
-      <Logo fill={colorDark} mt='1rem'/>
+      <Logo fill={colorDark} mt='1rem' />
       <HStack spacing={{ base: 0, md: 8 }}>
+        <Box as='a' href='/Berkay-Kuran-Resume.pdf' target='_blank'> Resume </Box>
         <IconButton
           id="toggleTheme"
           borderRadius="sm"
