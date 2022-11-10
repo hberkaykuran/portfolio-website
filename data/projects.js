@@ -29,9 +29,9 @@ export default [
     description:
       "Web application developed with NextJs and TailwindCSS. Utilizes NextAuth for authentication, and Firebase for providers and database.",
     tools: [react, nextjs, tailwindcss, firebase],
-    live: "https://fruit-festival-web3.vercel.app/",
+    live: "https://twitter-clone-hberkaykuran.vercel.app/",
     proto: null,
-    repo: null,
+    repo: "https://github.com/hberkaykuran/twitter-clone",
     id: uuidv4(),
     feature: true,
   },
