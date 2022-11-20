@@ -1,5 +1,6 @@
 import { Chakra } from "../components/svg/chakraLogo";
 import { Firebase } from "../components/svg/firebaseLogo";
+import { PlanetScale } from "../components/svg/planetScaleLogo";
 import {
   SiJavascript,
   SiReact,
@@ -7,6 +8,7 @@ import {
   SiFigma,
   SiNextdotjs,
   SiTailwindcss,
+  SiPrisma,
 } from "react-icons/si";
 import { v4 as uuidv4 } from "uuid";
 import { ReactComponent as web3svg } from "../components/svg/web3.svg";
@@ -79,5 +81,19 @@ export const tailwindcss = {
   name: "TailwindCSS",
   icon: SiTailwindcss,
   color: "#07b6d5",
+  id: uuidv4(),
+};
+
+export const prisma = {
+  name: "Prisma",
+  icon: SiPrisma,
+  color: "#123a50",
+  id: uuidv4(),
+};
+
+export const planetScale = {
+  name: "PlanetScale",
+  icon: PlanetScale,
+  color: "#123a50",
   id: uuidv4(),
 };
