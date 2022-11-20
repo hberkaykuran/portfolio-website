@@ -69,7 +69,12 @@ export const ProjectCard = ({
           <Heading data-testid="project-title" as="h3" variant="h3">
             {title}
           </Heading>
-          <Text data-testid="project-description">{description}</Text>
+          <Text
+            data-testid="project-description"
+            style={{ whiteSpace: "pre-wrap" }}
+          >
+            {description}
+          </Text>
         </Box>
         <Box
           alignItems="center"
