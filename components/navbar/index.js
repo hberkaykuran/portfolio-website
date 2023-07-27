@@ -20,7 +20,7 @@ export const Navbar = ({ isOpen, toggleIsOpen }) => {
       <MenuButton toggleIsOpen={toggleIsOpen} />
       <Logo fill={colorDark} mt="1rem" />
       <HStack spacing={{ base: 0, md: 8 }}>
-        <Box as="a" href="/Berkay-Kuran-Resume-Nov2022.pdf" target="_blank">
+        <Box as="a" href="/Berkay-Kuran-Resume-July2023.pdf" target="_blank">
           {" "}
           Resume{" "}
         </Box>
